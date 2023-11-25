@@ -8,7 +8,7 @@ List<OnBoardingModel> onBoardingList = [
           "We have a 100k Product, Choose \n Your Product from Our E-commerce Shop",
       image: AppImageAsset.onBoardingImageOne),
   OnBoardingModel(
-      title: "Ease & Safe Payment",
+      title: "Ease And Safe Payment",
       body:
           "We have a 100k Product, Choose \n Your Product from Our E-commerce Shop",
       image: AppImageAsset.onBoardingImageTwo),

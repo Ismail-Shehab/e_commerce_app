@@ -1,6 +1,7 @@
+import 'package:e_commerce_app/core/localization/changelocal.dart';
 import 'package:e_commerce_app/core/localization/translation.dart';
 import 'package:e_commerce_app/routes.dart';
-import 'package:e_commerce_app/view/screen/onboarding.dart';
+import 'package:e_commerce_app/view/screen/language.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -19,10 +20,12 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    LocaleController controller = Get.put(LocaleController());
     return GetMaterialApp(
       translations: MyTranslation(),
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
+      locale: controller.language,
       theme: ThemeData(
         fontFamily: "PlayfairDisplay",
         textTheme: const TextTheme(
@@ -39,7 +42,7 @@ class MyApp extends StatelessWidget {
         ),
         primarySwatch: Colors.blue
       ),
-      home:const OnBoarding(),
+      home:const Language(),
       routes: routes,
       // home: Image.asset('assets/images/onboardingfour.png')
     );

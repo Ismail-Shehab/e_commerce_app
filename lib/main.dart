@@ -1,6 +1,7 @@
 import 'package:e_commerce_app/core/localization/changelocal.dart';
 import 'package:e_commerce_app/core/localization/translation.dart';
 import 'package:e_commerce_app/routes.dart';
+import 'package:e_commerce_app/test.dart';
 import 'package:e_commerce_app/view/screen/language.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -51,6 +52,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue
       ),
       home:const Language(),
+      // home:const Test(),
       routes: routes,
       // home: Image.asset('assets/images/onboardingfour.png')
     );

@@ -1,4 +1,4 @@
-import 'package:e_commerce_app/controller/loging-controller.dart';
+import 'package:e_commerce_app/controller/auth/loging-controller.dart';
 import 'package:e_commerce_app/core/constant/color.dart';
 import 'package:e_commerce_app/view/widget/auth/logoauth.dart';
 import 'package:e_commerce_app/view/widget/auth/custombuttonauth.dart';
@@ -55,15 +55,18 @@ class Login extends StatelessWidget {
                 iconData: Icons.lock_outlined,
                 myController: controller.password,
               ),
-              const Text(
-                "Forget Password",
-                textAlign: TextAlign.end,
+              InkWell(
+                onTap: controller.goToForgetPassword,
+                child: const Text(
+                  "Forget Password",
+                  textAlign: TextAlign.end,
+                ),
               ),
               CustomButtonAuth(
                 text: "Sign In",
                 onPressed: () {},
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               CustomTextSignUpOrSignIn(

@@ -21,7 +21,7 @@ class Login extends StatelessWidget {
           elevation: 0.0,
           centerTitle: true,
           title: Text(
-            'Sign In',
+            "9".tr,
             style: Theme.of(context)
                 .textTheme
                 .headline1!
@@ -33,45 +33,44 @@ class Login extends StatelessWidget {
           child: ListView(
             children: [
               const LogoAuth(),
-              const CustomTextTitleAuth(text: "Welcome Back"),
+              CustomTextTitleAuth(text: "10".tr),
               const SizedBox(
                 height: 10,
               ),
-              const CustomTextBodyAuth(
-                  text:
-                      'Sign In With Your Email And Password Or Continue With Social Media'),
+              CustomTextBodyAuth(
+                  text: "11".tr),
               const SizedBox(
                 height: 15,
               ),
               CustomTextFormAuth(
-                hintText: "Enter Your Email",
-                labelText: "Email",
+                hintText: "12".tr,
+                labelText: "18".tr,
                 iconData: Icons.email_outlined,
                 myController: controller.email,
               ),
               CustomTextFormAuth(
-                hintText: "Enter Your Password",
-                labelText: "Password",
+                hintText: "13".tr,
+                labelText: "19".tr,
                 iconData: Icons.lock_outlined,
                 myController: controller.password,
               ),
               InkWell(
                 onTap: controller.goToForgetPassword,
-                child: const Text(
-                  "Forget Password",
+                child: Text(
+                  "14".tr,
                   textAlign: TextAlign.end,
                 ),
               ),
               CustomButtonAuth(
-                text: "Sign In",
+                text: "15".tr,
                 onPressed: () {},
               ),
               const SizedBox(
                 height: 30,
               ),
               CustomTextSignUpOrSignIn(
-                  textOne: "Don't Have An Account ? ",
-                  textTwo: "Sing Up",
+                  textOne: "16".tr,
+                  textTwo: "17".tr,
                   onTap: controller.goToSignUp)
             ],
           ),

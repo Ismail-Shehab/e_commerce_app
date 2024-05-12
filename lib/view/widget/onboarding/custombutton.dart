@@ -13,7 +13,7 @@ class CustomButtonOnBoarding extends GetView<OnBoardingControllerImp> {
                   height: 40,
                   margin: const EdgeInsets.only(bottom: 30),
                   child: MaterialButton(
-                    child: const Text("Continue"),
+                    child: Text("8".tr),
                     color: AppColor.primaryColor,
                     textColor: Colors.white,
                     padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 0),

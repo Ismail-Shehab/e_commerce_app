@@ -16,16 +16,17 @@ class OnBoarding extends StatelessWidget {
       child: Column(
         children: [
           const Expanded(
-            flex: 3,
+            flex: 5,
             child: CustomSliderOnBoarding(),
           ),
+          const Spacer(),
           Expanded(
               flex: 1,
               child: Column(
                 children: const [
                   CustomDotControllerOnBoarding(),
                   Spacer(
-                    flex: 2,
+                    flex: 1,
                   ),
                   CustomButtonOnBoarding()
                 ],

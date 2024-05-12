@@ -27,34 +27,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       locale: controller.language,
-      theme: ThemeData(
-        fontFamily: "PlayfairDisplay",
-        textTheme: const TextTheme(
-          headline1: TextStyle(
-            color: AppColor.black,
-              fontWeight: FontWeight.bold,
-              fontSize: 20
-            ),
-            headline2: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 26,
-                color: AppColor.black),
-          bodyText1: TextStyle(
-              height: 2,
-              color: AppColor.grey,
-              fontWeight: FontWeight.bold,
-              fontSize: 17),
-          bodyText2: TextStyle(
-              height: 2,
-              color: AppColor.grey,
-              fontSize: 14),
-        ),
-        primarySwatch: Colors.blue
-      ),
+      theme: controller.appTheme,
       home:const Language(),
       // home:const Test(),
       routes: routes,
-      // home: Image.asset('assets/images/onboardingfour.png')
     );
   }
 }
